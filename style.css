@@ -299,6 +299,13 @@
   color: rgb(128, 129, 132);
   font-weight: 700;
 }
+.accordion-button:not(.collapsed){
+  background-color: #fff !important;
+}
+.page-link{
+  padding: 10px 22px !important;
+  font-size: 20px;
+}
 
 /* ...........end-section................... */
 .end-section {
@@ -488,7 +495,7 @@ main {
     height: 660px;
   }
 }
-@media (min-width: 280px) and (max-width: 767px) {
+@media (min-width: 280px) and (max-width: 991px) {
   /* .main-section {
     margin-top: 310px;
   } */
