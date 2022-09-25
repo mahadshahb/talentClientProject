@@ -197,15 +197,17 @@
     </section>
     <section class="main-section pt-3">
         <div class="container-fluid p-0">
-            <div class="container">
+            <div class="container custom-container">
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb pt-0 crumb-class mb-0">
-                        <li class="breadcrumb-item"><a href="#">Vezeeta</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Dermatologiest</li>
-                    </ol>
+                    <div class="d-none d-md-block">
+                        <ol class="breadcrumb pt-0 crumb-class mb-0">
+                            <li class="breadcrumb-item"><a href="#">Vezeeta</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Dermatologiest</li>
+                        </ol>
+                    </div>
                 </nav>
                 <div class="row">
-                    <div class="col-md-3 pb-5 p-lg-3 p-0">
+                    <div class="new-scroll-fil col-md-3 pb-5 p-lg-3 p-0">
                         <div class="filter">
                             <p class="custom-f py-2 text-white mb-0"> <i class="fa fa-filter fa-icons"></i> filter</p>
                             <div class="accordion" id="accordionExample">
@@ -471,49 +473,86 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-9 mt-4">
+                    <div class="new-scroll-doc col-md-12 col-lg-9 mt-4">
                         <div class="doc-div mb-5">
-                            <div class="d-flex justify-content-between align-items-center flex-column flex-md-row">
-                                <h1 class="derma-class">Dermatology <span class="new-969">969 Doctors</span></h1>
-                                <div class="d-flex align-items-center">
-                                    <p class="mb-0 sort-class">sorting:</p>
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle custom-drop" type="button"
-                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Best Match
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
+                            <div class="d-block d-md-none">
+                                <div class="d-flex justify-content-between direction-new">
+                                    <h2 class="res-cclass">(416 result)</h2>
+                                    <p class="sorts-one-class text-primary"> <i class="fa fa-arrow-down"></i> sort</p>
+                                    <p class="fil-class text-primary"> <i class="fa fa-filter"></i> filter</p>
+                                </div>
+                            </div>
+                            <div class="d-none d-md-block">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h1 class="derma-class">Dermatology <span class="new-969">969 Doctors</span></h1>
+                                    <div class="d-flex align-items-center">
+                                        <p class="mb-0 sort-class">sorting:</p>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle custom-drop" type="button"
+                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Best Match
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="div-1 mt-4">
                                 <button class="btn-spon">sponsored</button>
                                 <div class="row">
-                                    <div class="col-md-4 col-lg-2 text-center">
-                                        <div class="mt-5">
-                                            <img src="./images/avimg.png" class="img-fluid rounded-img" alt="">
+                                    <div
+                                        class="cus-mob-class d-flex d-block d-md-none justify-content-start align-items-center">
+                                        <div class="text-lg-center">
+                                            <div class="mt-0 mx-3 new-avatar-img">
+                                                <img src="./images/avimg.png" class="rounded-img" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="pt-4">
+                                            <div class="d-flex justify-content-start justify-content-md-start">
+                                                <p class="mb-0 doc">doctor</p>
+                                                <a href="" class="kamra">Kamaria ElBanna</a>
+                                            </div>
+                                            <h3 class="occupa">Dermatology, Cosmetology and laser specialist</h3>
+                                            <div class="social-icons py-2">
+                                                <i class="fa fa-star text-warning pe-2"></i>
+                                                <i class="fa fa-star text-warning pe-2"></i>
+                                                <i class="fa fa-star text-warning pe-2"></i>
+                                                <i class="fa fa-star text-warning pe-2"></i>
+                                                <i class="fa fa-star-half text-warning pe-2"></i>
+                                            </div>
+                                            <p class="overall">Overall Rating From 207 Visitors</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-7 col-lg-5 mt-5 p-0 text-center text-lg-start">
-                                        <div class="d-flex justify-content-center justify-content-md-start">
-                                            <p class="mb-0 doc">doctor</p>
-                                            <a href="" class="kamra">Kamaria ElBanna</a>
+                                    <div class="col-md-2 col-lg-2 text-lg-center d-none d-md-block">
+                                        <div class="mt-5 ms-2 new-avatar-img">
+                                            <img src="./images/avimg.png" class="rounded-img" alt="">
                                         </div>
-                                        <h3 class="occupa">Dermatology, Cosmetology and laser specialist</h3>
-                                        <div class="social-icons py-2">
+                                    </div>
+                                    <div class="col-md-10 col-lg-5 mt-5 p-0 text-start">
+                                        <div class="d-none d-md-block">
+                                            <div class="d-flex justify-content-center justify-content-md-start">
+                                                <p class="mb-0 doc">doctor</p>
+                                                <a href="" class="kamra">Kamaria ElBanna</a>
+                                            </div>
+                                        </div>
+                                        <h3 class="occupa d-none d-md-block">Dermatology, Cosmetology and laser
+                                            specialist</h3>
+                                        <div class="social-icons py-2 d-none d-md-block">
                                             <i class="fa fa-star text-warning pe-2"></i>
                                             <i class="fa fa-star text-warning pe-2"></i>
                                             <i class="fa fa-star text-warning pe-2"></i>
                                             <i class="fa fa-star text-warning pe-2"></i>
                                             <i class="fa fa-star-half text-warning pe-2"></i>
                                         </div>
-                                        <p class="overall">Overall Rating From 207 Visitors</p>
-                                        <a class="btn-1"><i class="fa fa-ear-listen text-primary"></i> good listener</a>
-                                        <div class="info py-2">
+                                        <p class="overall d-none d-md-block">Overall Rating From 207 Visitors</p>
+                                        <a class="btn-1 d-none d-lg-block"><i class="fa fa-ear-listen text-primary"></i>
+                                            good listener</a>
+                                        <div class="info py-2 px-5 px-md-0">
                                             <p class="overall"><span class="text-primary"><i class="fa fa-plug"></i>
                                                     Dermatologist</span> Specialized
                                                 in <span class="text-primary">Cosmetic Dermatolgy and Laser,Fa..</span>
@@ -705,651 +744,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="div-1 mt-4">
-                                <button class="btn-spon">sponsored</button>
-                                <div class="row">
-                                    <div class="col-md-4 col-lg-2 text-center">
-                                        <div class="mt-5">
-                                            <img src="./images/avimg.png" class="img-fluid rounded-img" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7 col-lg-5 mt-5 p-0 text-center text-lg-start">
-                                        <div class="d-flex justify-content-center justify-content-md-start">
-                                            <p class="mb-0 doc">doctor</p>
-                                            <a href="" class="kamra">Kamaria ElBanna</a>
-                                        </div>
-                                        <h3 class="occupa">Dermatology, Cosmetology and laser specialist</h3>
-                                        <div class="social-icons py-2">
-                                            <i class="fa fa-star text-warning pe-2"></i>
-                                            <i class="fa fa-star text-warning pe-2"></i>
-                                            <i class="fa fa-star text-warning pe-2"></i>
-                                            <i class="fa fa-star text-warning pe-2"></i>
-                                            <i class="fa fa-star-half text-warning pe-2"></i>
-                                        </div>
-                                        <p class="overall">Overall Rating From 207 Visitors</p>
-                                        <a class="btn-1"><i class="fa fa-ear-listen text-primary"></i> good listener</a>
-                                        <div class="info py-2">
-                                            <p class="overall"><span class="text-primary"><i class="fa fa-plug"></i>
-                                                    Dermatologist</span> Specialized
-                                                in <span class="text-primary">Cosmetic Dermatolgy and Laser,Fa..</span>
-                                            </p>
-                                            <p class="overall"><i class="fa fa-location text-primary"></i>
-                                                El-Mohandessin : Abdel Hamid Lotfi Street, off Al-Batal Ahmed
-                                                Abdel Aziz Street</p>
-                                            <p class="overall"><i class="fa fa-money-bill text-primary"></i> Fees :
-                                                300EGP</p>
-                                            <p class="overall"><span class="text-primary"><i class="fa fa-clock"></i>
-                                                    Waiting Time : 33 Minutes</span></p>
-                                            <p class="overall"><i class="fa fa-phone text-primary"></i> 1667-Cost of
-                                                regular call</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-lg-5">
-                                        <main class="mt-lg-5 mt-1">
-                                            <div class="slider">
-                                                <div class="buttons">
-                                                    <a href="#!" class="button" id="prev"> <i
-                                                            class="fa-solid fa-chevron-left text-primary"></i></a>
-                                                    <a href="#!" class="button-1" id="next"><i
-                                                            class="fa-solid fa-chevron-right text-primary"></i></a>
-                                                </div>
-                                                <div class="slide" id="slide1">
-                                                    <div class="row">
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">today</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide" id="slide2">
-                                                    <div class="row">
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">today</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide" id="slide3">
-                                                    <div class="row">
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">today</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide" id="slide4">
-                                                    <div class="row">
-                                                        <div class="col-md-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 pe-0">
-                                                            <h1 class="today mb-0">today</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--    Add as many slides as you like    -->
-                                            </div>
-                                        </main>
-                                        <p class="end-p">Reservation required, first-come, first-served</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="div-1 mt-4">
-                                <button class="btn-spon">sponsored</button>
-                                <div class="row">
-                                    <div class="col-md-4 col-lg-2 text-center">
-                                        <div class="mt-5">
-                                            <img src="./images/avimg.png" class="img-fluid rounded-img" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7 col-lg-5 mt-5 p-0 text-center text-lg-start">
-                                        <div class="d-flex justify-content-center justify-content-md-start">
-                                            <p class="mb-0 doc">doctor</p>
-                                            <a href="" class="kamra">Kamaria ElBanna</a>
-                                        </div>
-                                        <h3 class="occupa">Dermatology, Cosmetology and laser specialist</h3>
-                                        <div class="social-icons py-2">
-                                            <i class="fa fa-star text-warning pe-2"></i>
-                                            <i class="fa fa-star text-warning pe-2"></i>
-                                            <i class="fa fa-star text-warning pe-2"></i>
-                                            <i class="fa fa-star text-warning pe-2"></i>
-                                            <i class="fa fa-star-half text-warning pe-2"></i>
-                                        </div>
-                                        <p class="overall">Overall Rating From 207 Visitors</p>
-                                        <a class="btn-1"><i class="fa fa-ear-listen text-primary"></i> good listener</a>
-                                        <div class="info py-2">
-                                            <p class="overall"><span class="text-primary"><i class="fa fa-plug"></i>
-                                                    Dermatologist</span> Specialized
-                                                in <span class="text-primary">Cosmetic Dermatolgy and Laser,Fa..</span>
-                                            </p>
-                                            <p class="overall"><i class="fa fa-location text-primary"></i>
-                                                El-Mohandessin : Abdel Hamid Lotfi Street, off Al-Batal Ahmed
-                                                Abdel Aziz Street</p>
-                                            <p class="overall"><i class="fa fa-money-bill text-primary"></i> Fees :
-                                                300EGP</p>
-                                            <p class="overall"><span class="text-primary"><i class="fa fa-clock"></i>
-                                                    Waiting Time : 33 Minutes</span></p>
-                                            <p class="overall"><i class="fa fa-phone text-primary"></i> 1667-Cost of
-                                                regular call</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-lg-5">
-                                        <main class="mt-lg-5 mt-1">
-                                            <div class="slider">
-                                                <div class="buttons">
-                                                    <a href="#!" class="button" id="prev"> <i
-                                                            class="fa-solid fa-chevron-left text-primary"></i></a>
-                                                    <a href="#!" class="button-1" id="next"><i
-                                                            class="fa-solid fa-chevron-right text-primary"></i></a>
-                                                </div>
-                                                <div class="slide" id="slide1">
-                                                    <div class="row">
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">today</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide" id="slide2">
-                                                    <div class="row">
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">today</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide" id="slide3">
-                                                    <div class="row">
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">today</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide" id="slide4">
-                                                    <div class="row">
-                                                        <div class="col-md-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 pe-0">
-                                                            <h1 class="today mb-0">today</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--    Add as many slides as you like    -->
-                                            </div>
-                                        </main>
-                                        <p class="end-p">Reservation required, first-come, first-served</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="div-1 mt-4">
-                                <button class="btn-spon">sponsored</button>
-                                <div class="row">
-                                    <div class="col-md-4 col-lg-2 text-center">
-                                        <div class="mt-5">
-                                            <img src="./images/avimg.png" class="img-fluid rounded-img" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7 col-lg-5 mt-5 p-0 text-center text-lg-start">
-                                        <div class="d-flex justify-content-center justify-content-md-start">
-                                            <p class="mb-0 doc">doctor</p>
-                                            <a href="" class="kamra">Kamaria ElBanna</a>
-                                        </div>
-                                        <h3 class="occupa">Dermatology, Cosmetology and laser specialist</h3>
-                                        <div class="social-icons py-2">
-                                            <i class="fa fa-star text-warning pe-2"></i>
-                                            <i class="fa fa-star text-warning pe-2"></i>
-                                            <i class="fa fa-star text-warning pe-2"></i>
-                                            <i class="fa fa-star text-warning pe-2"></i>
-                                            <i class="fa fa-star-half text-warning pe-2"></i>
-                                        </div>
-                                        <p class="overall">Overall Rating From 207 Visitors</p>
-                                        <a class="btn-1"><i class="fa fa-ear-listen text-primary"></i> good listener</a>
-                                        <div class="info py-2">
-                                            <p class="overall"><span class="text-primary"><i class="fa fa-plug"></i>
-                                                    Dermatologist</span> Specialized
-                                                in <span class="text-primary">Cosmetic Dermatolgy and Laser,Fa..</span>
-                                            </p>
-                                            <p class="overall"><i class="fa fa-location text-primary"></i>
-                                                El-Mohandessin : Abdel Hamid Lotfi Street, off Al-Batal Ahmed
-                                                Abdel Aziz Street</p>
-                                            <p class="overall"><i class="fa fa-money-bill text-primary"></i> Fees :
-                                                300EGP</p>
-                                            <p class="overall"><span class="text-primary"><i class="fa fa-clock"></i>
-                                                    Waiting Time : 33 Minutes</span></p>
-                                            <p class="overall"><i class="fa fa-phone text-primary"></i> 1667-Cost of
-                                                regular call</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-lg-5">
-                                        <main class="mt-lg-5 mt-1">
-                                            <div class="slider">
-                                                <div class="buttons">
-                                                    <a href="#!" class="button" id="prev"> <i
-                                                            class="fa-solid fa-chevron-left text-primary"></i></a>
-                                                    <a href="#!" class="button-1" id="next"><i
-                                                            class="fa-solid fa-chevron-right text-primary"></i></a>
-                                                </div>
-                                                <div class="slide" id="slide1">
-                                                    <div class="row">
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">today</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide" id="slide2">
-                                                    <div class="row">
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">today</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide" id="slide3">
-                                                    <div class="row">
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">today</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 col-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide" id="slide4">
-                                                    <div class="row">
-                                                        <div class="col-md-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 pe-0">
-                                                            <h1 class="today mb-0">today</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                        <div class="col-md-4 pe-0">
-                                                            <h1 class="today mb-0">tomorrow</h1>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <div class="am-pm py-3">
-                                                                <p class="mb-0 from-class">From 11:30 AM</p>
-                                                                <p class="mb-0 from-class">To 5:00 PM</p>
-                                                            </div>
-                                                            <h1 class="book mb-0">book</h1>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--    Add as many slides as you like    -->
-                                            </div>
-                                        </main>
-                                        <p class="end-p">Reservation required, first-come, first-served</p>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="row">
                             <div class="col-12">
@@ -1511,6 +906,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
     <script src="./js/slider.js"></script>
+    <script>
+        let mainNavLinks = document.querySelectorAll("new-scroll-fil");
+        let mainSections = document.querySelectorAll("new-scroll-doc");
+
+        let lastId;
+        let cur = [];
+
+        window.addEventListener("scroll", event => {
+            let fromTop = window.scrollY;
+
+            mainNavLinks.forEach(link => {
+                let section = document.querySelector(link.hash);
+
+                if (
+                    section.offsetTop <= fromTop &&
+                    section.offsetTop + section.offsetHeight > fromTop
+                ) {
+                    link.classList.add("current");
+                } else {
+                    link.classList.remove("current");
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

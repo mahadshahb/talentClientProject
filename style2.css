@@ -129,7 +129,11 @@
   border-radius: 12px;
 }
 .cus-img-r {
-  border-radius: 50%;
+  display: inline;
+  margin: 0 auto;
+  margin-left: -16%;
+  height: 100%;
+  width: auto;
 }
 .cust-doc {
   font-size: 20px;
@@ -361,6 +365,9 @@
   margin: auto;
   font-weight: 600;
 }
+#more-images{
+  display: none;
+}
 
 /* ...........about-doctor-section.................. */
 .about-the-doctor {
@@ -380,7 +387,7 @@
   font-weight: 500;
 }
 .c-img-fluid {
-  width: 273px;
+  /* width: 273px; */
   height: 110px;
 }
 .rating-p-c {
@@ -407,17 +414,30 @@
   color: rgb(116, 116, 112);
   font-size: 12px;
 }
-.view-more{
+.view-more {
   color: rgb(0, 112, 205);
-    cursor: pointer;
-    width: 100%;
-    text-align: center;
-    font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
 }
-.last-area-view{
+.last-area-view {
   border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    background-color: #fff;
+  border-bottom-right-radius: 7px;
+  background-color: #fff;
+}
+#more {
+  display: none;
+}
+/* #myImgBtn{
+  display: none;
+} */
+.new-img-avi {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 /* ..........popup........... */
@@ -561,13 +581,13 @@
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
-.hello-popup{
+.hello-popup {
   font-size: 17px;
-    color: rgb(0, 112, 205);
-    padding: 5.8px 6px;
-    position: sticky;
-    z-index: 3;
-    display: -webkit-flex;
+  color: rgb(0, 112, 205);
+  padding: 5.8px 6px;
+  position: sticky;
+  z-index: 3;
+  display: -webkit-flex;
 }
 
 /* Toggle this class - hide and show the popup */
@@ -591,28 +611,36 @@
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
-.popup-popular{
+.popup-popular {
   font-size: 14px;
-    color: rgb(116, 116, 112);
-    font-weight: 500;
-    text-align: start;
+  color: rgb(116, 116, 112);
+  font-weight: 500;
+  text-align: start;
 }
-.popup-others{
+.popup-others {
   font-size: 14px;
-    color: rgb(116, 116, 112);
-    font-weight: 500;
-    text-align: start;
+  color: rgb(116, 116, 112);
+  font-weight: 500;
+  text-align: start;
 }
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* ..........slider................ */
@@ -752,6 +780,113 @@ main {
   margin: 14px 0px 10px;
 }
 
+/* ......modal-images............ */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 24%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* .....carousal-slider........ */
+.car-class {
+  width: 100px !important;
+}
+.item {
+  display: flex !important;
+  justify-content: center !important;
+}
+
 /* .........set-responsiveness................ */
 
 @media (max-width: 991px) {
@@ -800,7 +935,7 @@ main {
   .cus-img-r {
     /* border-radius: 50%; */
     width: 140px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
   }
   .c-img-fluid {
     object-fit: contain;
@@ -809,18 +944,17 @@ main {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .n-responsive{
+  .n-responsive {
     flex-direction: column;
   }
-  .n-f-class{
+  .n-f-class {
     justify-content: center;
   }
-  .rating-p-c{
+  .rating-p-c {
     width: auto;
   }
 }
-@media(max-width:767px)
-{
+@media (max-width: 767px) {
   .popup .popuptext {
     /* visibility: hidden; */
     width: 100%;
@@ -834,51 +968,51 @@ main {
     top: 107%;
     left: 15%;
     /* margin-left: -80px; */
+  }
+  .popup-2 .popuptext2 {
+    /* visibility: hidden; */
+    width: 100%;
+    background-color: #fff;
+    color: rgb(82, 82, 206);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 107%;
+    left: 15%;
+    margin-left: -80px;
+  }
+  .popup-3 .popuptext3 {
+    /* visibility: hidden; */
+    width: 100%;
+    background-color: #fff;
+    color: rgb(82, 82, 206);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 107%;
+    left: 15%;
+    margin-left: -80px;
+  }
+  .popup-4 .popuptext4 {
+    /* visibility: hidden; */
+    width: 100%;
+    background-color: #fff;
+    color: rgb(82, 82, 206);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 107%;
+    left: 15%;
+    margin-left: -80px;
+  }
 }
-.popup-2 .popuptext2 {
-  /* visibility: hidden; */
-  width: 100%;
-  background-color: #fff;
-  color: rgb(82, 82, 206);
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  top: 107%;
-  left: 15%;
-  margin-left: -80px;
-}
-.popup-3 .popuptext3 {
-  /* visibility: hidden; */
-  width: 100%;
-  background-color: #fff;
-  color: rgb(82, 82, 206);
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  top: 107%;
-  left: 15%;
-  margin-left: -80px;
-}
-.popup-4 .popuptext4 {
-  /* visibility: hidden; */
-  width: 100%;
-  background-color: #fff;
-  color: rgb(82, 82, 206);
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  top: 107%;
-  left: 15%;
-  margin-left: -80px;
-}
-}
-@media(min-width:768px) and (max-width:991px){
+@media (min-width: 768px) and (max-width: 991px) {
   .popup-2 .popuptext2 {
     /* visibility: hidden; */
     width: 600px;
@@ -925,7 +1059,7 @@ main {
     /* margin-left: -80px; */
   }
 }
-@media(min-width:992px) and (max-width:1024px){
+@media (min-width: 992px) and (max-width: 1024px) {
   .popup-4 .popuptext4 {
     /* visibility: hidden; */
     width: 600px;
@@ -939,9 +1073,9 @@ main {
     top: 107%;
     left: -122%;
     margin-left: -80px;
+  }
 }
-}
-@media(min-width:1025px) and (max-width:1220px){
+@media (min-width: 1025px) and (max-width: 1220px) {
   .popup-4 .popuptext4 {
     /* visibility: hidden; */
     width: 600px;
@@ -955,5 +1089,10 @@ main {
     top: 107%;
     left: -122%;
     margin-left: -80px;
+  }
 }
+@media(max-width:767px){
+  .custom-index2-container{
+    max-width: 755px !important;
+  }
 }
