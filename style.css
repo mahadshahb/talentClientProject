@@ -114,10 +114,10 @@
 .c-img-fluid {
   object-fit: cover;
 }
-.fa-car-icon{
+.fa-car-icon {
   position: absolute;
-    left: 20%;
-    top: 78%;
+  left: 20%;
+  top: 78%;
 }
 /* ...........main-section................... */
 
@@ -215,9 +215,19 @@
   border-radius: 10px;
   position: relative;
 }
-.rounded-img {
-  width: 90px;
+.new-avatar-img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
   border-radius: 50%;
+}
+.rounded-img {
+  display: inline;
+  margin: 0 auto;
+  margin-left: 0%;
+  height: 100%;
+  width: auto;
 }
 .doc {
   font-size: 14px;
@@ -265,6 +275,32 @@
 .filter {
   width: 100%;
 }
+.cus-mob-class {
+  background-color: #dfdfdf73;
+}
+.res-cclass {
+  color: rgb(116, 116, 112);
+  font-size: 12px;
+  width: 30%;
+  text-align: center;
+  padding: 8px 0px;
+}
+.sorts-one-class {
+  background: #fff;
+  padding: 4px 70px;
+}
+.fil-class {
+  background: #fff;
+  padding: 4px 70px;
+}
+@media (min-height: 300px) {
+  .new-scroll-fil {
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky !important;
+    overflow: hidden;
+  }
+}
 
 /* ..........faq-section.................. */
 .faq-section {
@@ -299,10 +335,10 @@
   color: rgb(128, 129, 132);
   font-weight: 700;
 }
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
   background-color: #fff !important;
 }
-.page-link{
+.page-link {
   padding: 10px 22px !important;
   font-size: 20px;
 }
@@ -474,13 +510,13 @@
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
-.hello-popup{
+.hello-popup {
   font-size: 17px;
-    color: rgb(0, 112, 205);
-    padding: 5.8px 6px;
-    position: sticky;
-    z-index: 3;
-    display: -webkit-flex;
+  color: rgb(0, 112, 205);
+  padding: 5.8px 6px;
+  position: sticky;
+  z-index: 3;
+  display: -webkit-flex;
 }
 
 /* Toggle this class - hide and show the popup */
@@ -504,28 +540,36 @@
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
-.popup-popular{
+.popup-popular {
   font-size: 14px;
-    color: rgb(116, 116, 112);
-    font-weight: 500;
-    text-align: start;
+  color: rgb(116, 116, 112);
+  font-weight: 500;
+  text-align: start;
 }
-.popup-others{
+.popup-others {
   font-size: 14px;
-    color: rgb(116, 116, 112);
-    font-weight: 500;
-    text-align: start;
+  color: rgb(116, 116, 112);
+  font-weight: 500;
+  text-align: start;
 }
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* ..........slider................ */
@@ -664,7 +708,7 @@ main {
 
 @media (max-width: 991px) {
   .slider {
-    width: 100%;
+    width: 35%;
   }
 }
 @media (min-width: 1000px) and (max-width: 1262px) {
@@ -700,8 +744,7 @@ main {
     width: 100%;
   }
 }
-@media(max-width:767px)
-{
+@media (max-width: 767px) {
   .popup .popuptext {
     /* visibility: hidden; */
     width: 100%;
@@ -715,51 +758,51 @@ main {
     top: 107%;
     left: 15%;
     /* margin-left: -80px; */
+  }
+  .popup-2 .popuptext2 {
+    /* visibility: hidden; */
+    width: 100%;
+    background-color: #fff;
+    color: rgb(82, 82, 206);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 107%;
+    left: 15%;
+    margin-left: -80px;
+  }
+  .popup-3 .popuptext3 {
+    /* visibility: hidden; */
+    width: 100%;
+    background-color: #fff;
+    color: rgb(82, 82, 206);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 107%;
+    left: 15%;
+    margin-left: -80px;
+  }
+  .popup-4 .popuptext4 {
+    /* visibility: hidden; */
+    width: 100%;
+    background-color: #fff;
+    color: rgb(82, 82, 206);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 107%;
+    left: 15%;
+    margin-left: -80px;
+  }
 }
-.popup-2 .popuptext2 {
-  /* visibility: hidden; */
-  width: 100%;
-  background-color: #fff;
-  color: rgb(82, 82, 206);
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  top: 107%;
-  left: 15%;
-  margin-left: -80px;
-}
-.popup-3 .popuptext3 {
-  /* visibility: hidden; */
-  width: 100%;
-  background-color: #fff;
-  color: rgb(82, 82, 206);
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  top: 107%;
-  left: 15%;
-  margin-left: -80px;
-}
-.popup-4 .popuptext4 {
-  /* visibility: hidden; */
-  width: 100%;
-  background-color: #fff;
-  color: rgb(82, 82, 206);
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  top: 107%;
-  left: 15%;
-  margin-left: -80px;
-}
-}
-@media(min-width:768px) and (max-width:991px){
+@media (min-width: 768px) and (max-width: 991px) {
   .popup-2 .popuptext2 {
     /* visibility: hidden; */
     width: 600px;
@@ -806,7 +849,7 @@ main {
     /* margin-left: -80px; */
   }
 }
-@media(min-width:992px) and (max-width:1024px){
+@media (min-width: 992px) and (max-width: 1024px) {
   .popup-4 .popuptext4 {
     /* visibility: hidden; */
     width: 600px;
@@ -820,9 +863,9 @@ main {
     top: 107%;
     left: -122%;
     margin-left: -80px;
+  }
 }
-}
-@media(min-width:1025px) and (max-width:1220px){
+@media (min-width: 1025px) and (max-width: 1220px) {
   .popup-4 .popuptext4 {
     /* visibility: hidden; */
     width: 600px;
@@ -836,5 +879,35 @@ main {
     top: 107%;
     left: -122%;
     margin-left: -80px;
+  }
 }
+@media (max-width: 991px) {
+  .custom-container {
+    max-width: 996px !important;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  .overall {
+    font-size: 15px;
+  }
+  .occupa {
+    font-size: 16.5px;
+  }
 }
+@media (max-width: 573px) {
+  .sorts-one-class {
+    padding: 4px 31px;
+  }
+  .fil-class {
+    padding: 4px 31px;
+  }
+}
+@media (min-width: 280px) and (max-width: 397px) {
+  .direction-new {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
