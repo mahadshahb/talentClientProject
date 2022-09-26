@@ -293,13 +293,10 @@
   background: #fff;
   padding: 4px 70px;
 }
-@media (min-height: 300px) {
-  .new-scroll-fil {
-    position: sticky;
+.custom-sticky-scroll{
+  position: sticky;
     top: 0;
-    position: -webkit-sticky !important;
-    overflow: hidden;
-  }
+    height: 830px;
 }
 
 /* ..........faq-section.................. */
@@ -908,6 +905,58 @@ main {
   .direction-new {
     flex-direction: column;
     justify-content: center;
+  }
+}
+@media(min-width:280px) and (max-width:991px){
+  .custom-faq-cont{
+    max-width: 950px !important;
+  }
+  .faq-btn{
+    left: 7%;
+  }
+  .custom-edn-cont{
+    max-width: 950px !important;
+  }
+}
+@media(max-width:514px)
+{
+  .occupa{
+    font-size: 12.5px;
+  }
+  .kamra{
+    font-size: 19px;
+  }
+  .overall{
+    font-size: 12px;
+  }
+}
+@media(max-width:427px){
+  .new-avatar-img{
+    width: 70px;
+    height: 70px;
+  }
+}
+@media(max-width:383px){
+  .cus-pt-4{
+    width: 188px;
+  }
+}
+@media(min-width:280px) and (max-width:383px){
+  .kamra{
+    font-size: 13px;
+  }
+  .doc{
+    font-size: 9px
+  }
+}
+@media(min-width:768px) and (max-width:991px){
+  .slider{
+    width: 45%;
+  }
+}
+@media(max-width:767px){
+  .faq-cont{
+    padding: 6px;
   }
 }
 
