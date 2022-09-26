@@ -75,15 +75,6 @@
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.search-tab-section {
-  /* margin-left: 135px;
-    margin-right: 125px; */
-  /* position: absolute; */
-  /* width: 80%; */
-  /* bottom: 0%;
-    top: 76%;
-    left: 9%; */
-}
 .search-btn {
   background: red;
   color: #fff;
@@ -103,13 +94,6 @@
 }
 .img-f-class {
   filter: invert(0);
-}
-.doc-image {
-  /* width: 300px;
-    height: auto;
-    text-align: center;
-    padding: 15px; */
-  /* border: 3px solid red; */
 }
 .c-img-fluid {
   object-fit: cover;
@@ -373,6 +357,86 @@
   top: 0;
   height: 830px;
 }
+.carousel-item {
+  position: relative;
+  display: none;
+  float: right;
+  width: 100%;
+  margin-right: -36%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform .6s ease-in-out;
+}
+/* .....new-onone-slider..... */
+.sliderone1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__wrapper {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.slider__item {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  height: 50px;
+  transform: translateY(-25%);
+  background: rgba(0, 0, 0, .5);
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: .9;
+}
+
+.slider__control_left {
+  left: 0;
+}
+
+.slider__control_right {
+  right: 0;
+}
+
+.slider__control::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_right::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.slider__item>div {
+  line-height: 250px;
+  font-size: 100px;
+  text-align: center;
+}
+
 
 /* ...........about-doctor-section.................. */
 .about-the-doctor {
@@ -735,7 +799,7 @@ main {
   right: 0%;
 }
 
-.slide {
+.slidesFirst {
   width: 97%;
   height: 100%;
   margin: auto;
@@ -856,9 +920,12 @@ main {
   max-width: 700px;
   text-align: center;
   color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+  /* padding: 10px 0;
+  height: 150px; */
 }
+/* .carousel-control-next, .carousel-control-prev{
+  top: -50% !important;
+} */
 
 /* Add Animation */
 .modal-content,
@@ -886,7 +953,6 @@ main {
     transform: scale(1);
   }
 }
-
 /* The Close Button */
 .close {
   position: absolute;
@@ -920,6 +986,10 @@ main {
   display: flex !important;
   justify-content: center !important;
 }
+
+
+/* ......new-click-slider.............. */
+
 
 /* .........set-responsiveness................ */
 
@@ -1156,9 +1226,19 @@ main {
 }
 @media (min-width: 280px) and (max-width: 767px) {
   .cus-new-col {
-    background-color: #ededed;
+    background-color: #ffffff;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
   }
   .cus-mb {
-    background-color: #ededed;
+    background-color: #ffffff;
+  }
+  .main-index2-slider{
+    background-color: #fff;
+  }
+}
+@media(max-width:767px){
+  .cus-w-class{
+    width: 50% !important;
   }
 }
