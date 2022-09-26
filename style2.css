@@ -365,8 +365,13 @@
   margin: auto;
   font-weight: 600;
 }
-#more-images{
+#more-images {
   display: none;
+}
+.custom-sticky-new {
+  position: sticky;
+  top: 0;
+  height: 830px;
 }
 
 /* ...........about-doctor-section.................. */
@@ -438,6 +443,35 @@
   position: relative;
   overflow: hidden;
   border-radius: 50%;
+}
+.new-p {
+  color: rgb(102, 102, 102);
+  font-size: 16px;
+}
+.new-visi {
+  text-align: center;
+  margin: 0px;
+  color: rgb(102, 102, 102);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.n-d-rat {
+  color: rgb(102, 102, 102);
+  font-size: 15px;
+  line-height: 22px;
+}
+.n-width {
+  width: 38%;
+  border: 1px solid #cfcbcb;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  border-radius: 6px;
+}
+.btn-secondary {
+  background-color: #7ca2c357 !important;
+  color: #0081ff !important;
+  border-style: none;
 }
 
 /* ..........popup........... */
@@ -889,7 +923,17 @@ main {
 
 /* .........set-responsiveness................ */
 
-@media (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
+  .slider {
+    width: 60%;
+  }
+}
+@media (min-width: 280px) and (max-width: 500px) {
+  .slider {
+    width: 80%;
+  }
+}
+@media (min-width: 280px) and (max-width: 403px) {
   .slider {
     width: 100%;
   }
@@ -1091,8 +1135,30 @@ main {
     margin-left: -80px;
   }
 }
-@media(max-width:767px){
-  .custom-index2-container{
+@media (max-width: 767px) {
+  .custom-index2-container {
     max-width: 755px !important;
+  }
+}
+@media (min-width: 280px) and (max-width: 767px) {
+  .cust-doc {
+    font-size: 15px;
+  }
+  .new-star-icon {
+    font-size: 16px;
+  }
+  .index2-para {
+    font-size: 15px;
+  }
+  .new-img-avi {
+    border-radius: 10%;
+  }
+}
+@media (min-width: 280px) and (max-width: 767px) {
+  .cus-new-col {
+    background-color: #ededed;
+  }
+  .cus-mb {
+    background-color: #ededed;
   }
 }
