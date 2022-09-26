@@ -321,7 +321,7 @@
   font-weight: 400;
 }
 .years-old {
-  direction: ltr;
+  /* direction: ltr; */
   font-size: 12px;
   margin-top: 8px;
   font-weight: 500;
