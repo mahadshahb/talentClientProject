@@ -9,6 +9,7 @@
 .upper-section {
   background-color: rgb(236, 236, 236);
   /* height: 208px; */
+  overflow: hidden;
 }
 .custom-h1 {
   font-size: 19px;
@@ -107,6 +108,7 @@
 /* ......index2-main-section............. */
 .index2-main-section {
   background-color: rgb(218 222 227);
+  /* overflow: hidden; */
 }
 .custom-bg {
   background-color: #fff;
