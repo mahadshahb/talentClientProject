@@ -3,7 +3,6 @@
   margin: 0%;
   box-sizing: border-box;
 }
-
 /* ............upper-section................... */
 
 .upper-section {
@@ -165,7 +164,8 @@
   color: rgb(0, 112, 205);
 }
 .fa-icons {
-  padding-right: 10px;
+  /* padding-right: 10px; */
+  margin-left: 10px;
 }
 .crumb-class {
   font-size: 12px;
@@ -256,6 +256,8 @@
   font-size: 11px;
   color: rgb(128, 129, 132);
   font-weight: 500;
+  /* direction: rtl; */
+    /* text-align: start; */
 }
 .btn-1 {
   display: inline;

@@ -366,6 +366,7 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform .6s ease-in-out;
+  direction: ltr;
 }
 /* .....new-onone-slider..... */
 .sliderone1 {
@@ -1240,5 +1241,10 @@ main {
 @media(max-width:767px){
   .cus-w-class{
     width: 50% !important;
+  }
+}
+@media(min-width:767px){
+  .years-old{
+    direction: ltr;
   }
 }
